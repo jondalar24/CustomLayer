@@ -44,7 +44,7 @@ model = Sequential([
 - 10 neuronas para salida multiclase
 - Dropout(0.5) ayuda a prevenir el sobreajuste
 - Softmax() convierte las salidas en probabilidades (clasificación multiclase)
-
+---
 ### ✅ 3. Compilación del modelo
 ```python
 model.compile(optimizer='adam',
@@ -86,12 +86,13 @@ model.evaluate(x_test, y_test)
 | `loss`          | `model.compile()`           | `'categorical_crossentropy'`, `'sparse_categorical_crossentropy'` |
 | `optimizer`     | `adam`, `sgd`, `rmsprop`, etc. | Afecta cómo se ajustan los pesos durante el entrenamiento     |
 
-
+---
 #### 🧪 Ejecución
 Este script puede ejecutarse directamente en un entorno con TensorFlow 2.x:
 ```bash
 python custom_dense_model.py
 ```
+---
 ### 📚 Aplicaciones
 Esta técnica de crear capas personalizadas es útil cuando:
 
